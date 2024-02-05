@@ -13,6 +13,11 @@
   :ensure t
   :init
     (global-undo-tree-mode))
+;; magit
+(use-package magit
+  :ensure t
+  :bind (("C-x g" . magit-status)
+	          ("C-x C-g" . magit-status)))
 
 (global-set-key (kbd "C-c SPC")   'set-mark-command)
 
@@ -28,7 +33,26 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(use-package)))
+ '(package-selected-packages '(use-package))
+ '(warning-suppress-log-types
+   '((use-package)
+     (use-package)
+     (use-package)
+     (use-package)
+     (use-package)
+     (use-package)
+     (use-package)
+     (use-package)
+     (use-package)))
+ '(warning-suppress-types
+   '((use-package)
+     (use-package)
+     (use-package)
+     (use-package)
+     (use-package)
+     (use-package)
+     (use-package)
+     (use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
