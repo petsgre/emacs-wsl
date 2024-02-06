@@ -17,11 +17,6 @@
 (use-package fzf
   :ensure t)
 
-;; (use-package typescript-mode
-;;   :config
-;;   (define-derived-mode typescriptreact-mode typescript-mode
-;;     "TypeScript TSX"))
-
 
 (use-package swiper
   :ensure t
@@ -92,11 +87,6 @@
 (use-package lsp-mode
   :ensure t)
 
-
-;; (use-package typescript-mode
-;;   :ensure t
-;;   :config
-;;   (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . typescriptreact-mode)))
 
 ;; wsl下选中
 (global-set-key (kbd "C-c SPC")   'set-mark-command)
